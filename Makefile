@@ -19,7 +19,7 @@ resume:
 	$(BUILD_RESUME)
 
 resume-extended:
-	$(BUILD_RESUME)
+	$(BUILD_RESUME_EXTENDED)
 	$(BUILD_RESUME_EXTENDED)
 
 clean-all:
