@@ -1,0 +1,75 @@
+%\geometry{showframe}
+
+\usepackage{amsmath}
+
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title{Curriculum Vit\ae}
+\author[Steven Velozo]{Steven Velozo}
+\date{May 2014}
+\newcommand{\displayaddress}{\marginnote[0.9cm]{\raggedleft{\href{mailto:steven@velozo.com}{steven@velozo.com}\\(206) 604-4981 }}}
+
+\usepackage{booktabs}
+\usepackage{units}
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides tools for creating the diagram
+\usepackage{rotating}
+\usepackage{tikz}
+\usetikzlibrary{arrows,backgrounds,snakes}
+
+% Define colors
+\definecolor{DarkGray}{RGB}{15,15,15}
+\definecolor{LightGray}{RGB}{59,58,55}
+\definecolor{BrightTaupe}{RGB}{252,246,219}
+\definecolor{Taupe}{RGB}{191,186,166}
+\definecolor{BurntOrange}{RGB}{198,100,13}
+\definecolor{BrightRed}{RGB}{116,32,21}
+\definecolor{SteelBlue}{RGB}{54,62,74}
+\definecolor{LinkBlue}{RGB}{28,86,173}
+\definecolor{HighlightBrown}{RGB}{46,110,87}
+
+% Define Styles
+\newcommand{\mhstandout}[1]{\textbf{\textcolor{DarkGray}{#1}}}
+\newcommand{\shstandout}[1]{\textbf{\textcolor{BurntOrange}{#1}}}
+\newcommand{\shyears}[1]{\small{\texttt{\textcolor{LightGray}{#1}}}}
+\newcommand{\pstandout}[1]{\textcolor{BrightRed}{#1}}
+\newcommand{\competency}[1]{\textcolor{BrightRed}{#1}}
+
+% Define hyperlink info and PDF metadata
+\hypersetup
+{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Curriculum Vitae - Steven Velozo},    % title
+    pdfauthor={Steven Velozo},     % author
+    pdfsubject={CV},   % subject of the document
+    pdfcreator={Steven Velozo},   % creator of the document
+    pdfproducer={MathBookPro}, % producer of the document
+    pdfkeywords={cv} {resume} {experience}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=LinkBlue,          % color of internal links (change box color with linkbordercolor)
+    citecolor=SteelBlue,        % color of links to bibliography
+    filecolor=LinkBlue,      % color of file links
+    urlcolor=LinkBlue           % color of external links
+}
+
+% Get the full width of the page, for use in our custom full width macro
+\makeatletter
+\newlength{\fullpagewidth}
+\AtBeginDocument{\setlength{\fullpagewidth}{\@tufte@fullwidth}}
+\makeatother
+
+% Full width macro
+\newcommand{\fullwidthmode}[1]{\noindent\begin{minipage}{\fullpagewidth}#1\end{minipage}}

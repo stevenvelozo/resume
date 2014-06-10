@@ -1,0 +1,23 @@
+% This CV is based on the Tufte-Handout classes available on Google Code.
+\documentclass{tufte-handout}
+
+\newcommand{\includefile}[1]{ \input{sections/StevenVelozo-Resume-2014-#1.tex} }
+
+\includefile{00-Definitions}
+
+\begin{document}
+\includefile{01-FrontPage}
+
+\pagebreak
+\section{Professional \mhstandout{Work History}}\label{sec:work-history}
+\includefile{02-Timeline}
+\includefile{03-Experience}
+
+\pagebreak
+\includefile{04-VolunteerAndEducation}
+\pagebreak
+\includefile{05-Products}
+
+\pagebreak
+\includefile{06-InventionsAndCredentials}
+\end{document}
