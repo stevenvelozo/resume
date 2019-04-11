@@ -1,10 +1,12 @@
 % Display a timeline of my work history.
 \begin{figure*}[h]
+% Latex is bad at centering tikz charts that are too wide for the page
+\hspace*{-1.25cm}
 \begin{tikzpicture}
   % Draw a horizontal year axis line
-  \draw (-1,0) -- (13,0);
+  \draw (-1,0) -- (14,0);
   % Draw marks for every other year
-  \foreach \x [evaluate=\x as \year using int(1990+\x*2.0)] in {-1,0,...,13}
+  \foreach \x [evaluate=\x as \year using int(1990+\x*2.0)] in {-1,0,...,14}
   {
     \draw (\x,0) node[below=5pt,anchor=east,xshift=5pt,rotate=45] {$\year$};
     \draw (\x cm,3pt) -- (\x cm,-3pt);
@@ -41,10 +43,10 @@
   \node[below] at (10,2.5) {\tiny{\textsc{Aug}}};
   \node[below] at (12,2.5) {\tiny{\textsc{May}}};
 
-  \draw[|->] (10.5, 4) -- (13, 4) node[midway, above, align=center, text width=7cm]{DocuCluster};
+  \draw[|->] (10.5, 4) -- (14, 4) node[midway, above, align=center, text width=7cm]{DocuCluster};
   \node[below] at (10.5,4) {\tiny{\textsc{Mar}}};
 
-  \draw[|->] (12.5, 1) -- (13, 1) node[midway, above, align=center, text width=7cm]{Pavia Systems};
+  \draw[|->] (12.5, 1) -- (14, 1) node[midway, above, align=center, text width=7cm]{Pavia Systems};
   \node[below] at (12.5,1) {\tiny{\textsc{Feb}}};
 \end{tikzpicture}
   \caption{}
